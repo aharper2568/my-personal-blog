@@ -1,16 +1,23 @@
-// access keys for button
+// access keys for buttons and field
 const  themeSwitcher = document.querySelector('#mode-toggle')
 const container = document.querySelector('main')
+const usernameInput = document.getElementById('username');
+const titleInput = document.getElementById('title');
+const contentInput = document.getElementById('content');
+const submitButton = document.getElementById('submit')
 
-let mode = 'dark';
-// listen for click
-themeSwitcher.addEventListener('click', function () {
-  if (mode === 'dark') {
-    mode = 'light';
-    container.setAttribute('class', 'light');
-  } // if mode is light make dark
-  else {
-    mode = 'dark';
-    container.setAttribute('class', 'dark')
-  }
+
+submitButton.addEventListener('click', function (event){
+  event.preventDefault();
+
+  const posts = JSON.parse(localStorage.getItem('posts')) || [];
+
+  const post = { 
+    userName: usernameInput.value.trim(),
+    title: titleInput.value.trim(),
+    content: contentInput.value.trim()
+
+  };
+  localStorage.setItem('posts', JSON.stringify(posts));
+
 });
