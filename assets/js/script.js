@@ -1,6 +1,5 @@
 // access keys for buttons and field
-const  themeSwitcher = document.querySelector('#mode-toggle')
-const container = document.querySelector('main')
+
 const usernameInput = document.getElementById('username');
 const titleInput = document.getElementById('title');
 const contentInput = document.getElementById('content');
@@ -18,6 +17,9 @@ submitButton.addEventListener('click', function (event){
     content: contentInput.value.trim()
 
   };
+
+  posts.push(post);
+  
   localStorage.setItem('posts', JSON.stringify(posts));
 
 });
