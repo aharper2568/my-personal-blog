@@ -1,16 +1,20 @@
-const backButton = document.querySelector('#back-button');
-const postsList = document.querySelector('#posts-list');
-const createPost = document.createElement('div')
-backButton.addEventListener('click', function () {
-  window.location.href = 'index.html';
-  
-});
 
-function getPosts () {
-  let posts = JSON.parse(localStorage.getItem('posts')) || [];
-  createPost.innerHTML=`<h2>${posts.title}</h2><p>${posts.content}</p><p><em>by ${posts.username}</em></p>`
-  postsList.appendChild(createPost)
+  const backButton = document.querySelector('#back-button');
+  const postsList = document.querySelector('#posts-list');
 
-};
+  backButton.addEventListener('click', function () {
+      window.location.href = 'index.html';
+  });
 
-getPosts();
+  function getPosts() {
+      let posts = JSON.parse(localStorage.getItem('posts')) || [];
+      postsList.innerHTML = '';
+      posts.forEach(post => {
+          const postDiv = document.createElement('div');
+          postDiv.classList.add('post');
+          postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><p><em>by ${post.username}</em></p>`;
+          postsList.appendChild(postDiv);
+      });
+  }
+
+  getPosts();
