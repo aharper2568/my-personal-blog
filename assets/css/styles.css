@@ -14,7 +14,7 @@ body {
 }
 
 header, footer {
-  background-color: #f8f9fa;
+  background-color: #e9eef5;
   padding: 1em;
   text-align: center;
 }
@@ -33,4 +33,9 @@ main {
   color: #fff;
 }
 
+
+.light {
+  background-color: #94c8fd;
+  color: #0c0b0b;
+}
 
