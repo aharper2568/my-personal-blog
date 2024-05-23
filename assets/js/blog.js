@@ -12,7 +12,7 @@
       posts.forEach(post => {
           const postDiv = document.createElement('div');
           postDiv.classList.add('post');
-          postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><p><em>by ${post.username}</em></p>`;
+          postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><p><em>by ${post.userName}</em></p>`;
           postsList.appendChild(postDiv);
       });
   }
