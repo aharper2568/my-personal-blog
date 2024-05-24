@@ -16,7 +16,9 @@ This project is a two-webpage application that allows the user to enter a userna
 - Clicking on the back button on the secondary webpage will bring the user back to the landing page, enabling the option of submitting another blog post.
 
 ## URLs
-[Live URL](https://github.com/aharper2568/my-personal-blog) \
+[Live URL](https://aharper2568.github.io/my-personal-blog/) \
 [Github Repo](https://github.com/aharper2568/my-personal-blog)
+
+## Screenshots
 
 
