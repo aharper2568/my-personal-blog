@@ -21,4 +21,5 @@ This project is a two-webpage application that allows the user to enter a userna
 
 ## Screenshots
 
-
+![Screenshot of landing page with darkmode](./assets/images/blogscreen1.png)
+![Screenshot of blog page with lightmode](./assets/images/blogscreen2.png)
