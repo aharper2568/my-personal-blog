@@ -23,3 +23,14 @@ This project is a two-webpage application that allows the user to enter a userna
 
 ![Screenshot of landing page with darkmode](./assets/images/blogscreen1.png)
 ![Screenshot of blog page with lightmode](./assets/images/blogscreen2.png)
+
+
+## Author and Contributors
+
+HTML and CSS fully coded by **Anthony Harper** 
+
+- [*forEach* method responsible for fetching user input and displaying it on the blog](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 
+
+- [HTML attribute *required* ensuring all fields are filled before submition](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required)
+
+- [*textarea* HTML element that allowed for a bigger input field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
