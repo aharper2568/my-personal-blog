@@ -7,8 +7,11 @@
   });
 
   function getPosts() {
+    // grab items from key
       let posts = JSON.parse(localStorage.getItem('posts')) || [];
+    //   make initial list blank
       postsList.innerHTML = '';
+    //   forEach makes the action happen  for every iteration data
       posts.forEach(post => {
           const postDiv = document.createElement('div');
           postDiv.classList.add('post');
@@ -16,5 +19,5 @@
           postsList.appendChild(postDiv);
       });
   }
-
+// call function
   getPosts();

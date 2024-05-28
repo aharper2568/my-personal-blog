@@ -9,7 +9,7 @@ const submitButton = document.getElementById('submit')
 
 submitButton.addEventListener('click', function (event){
   event.preventDefault();
-
+// trim any white space 
   const username = usernameInput.value.trim();
   const title = titleInput.value.trim();
   const content = contentInput.value.trim();
@@ -31,7 +31,7 @@ submitButton.addEventListener('click', function (event){
   posts.push(post);
 
   localStorage.setItem('posts', JSON.stringify(posts));
-
+// immediately load next page to display input
   window.location.href = 'blog.html';
  
 
