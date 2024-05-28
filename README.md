@@ -27,7 +27,7 @@ This project is a two-webpage application that allows the user to enter a userna
 
 ## Author and Contributors
 
-HTML and CSS fully coded by **Anthony Harper** 
+HTML, CSS, and JS fully coded by **Anthony Harper** 
 
 - [*forEach* method responsible for fetching user input and displaying it on the blog](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 
 
