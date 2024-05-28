@@ -10,13 +10,14 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+  <!-- button for light and dark mode -->
 <header class="dark">
   <button id="mode-toggle">Light/Dark Mode</button>
 </header>
     <main class="dark container">
       <article class="my-blog">My first blog!</article>
       <article>
-        <form id="blog-form">
+        <form>
           <label for="username">Username:</label>
             <input type="text" id="username" name="username">
             <label for="title">Blog Title:</label>
@@ -25,7 +26,6 @@
             <textarea id="content" name="content"></textarea>
             <button id ="submit" type="submit">Submit</button>
         </form>
-        <div id="error-message" style="color: red; display: none;">Please fill out all fields</div>
       </article>
     
     </main>
